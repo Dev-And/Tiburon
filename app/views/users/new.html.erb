@@ -1,42 +1,37 @@
 <% provide(:title, 'Create user') %>
-<h2>Registration</h2>
-<form class="form-horizontal">
-  <div class="form-group">
-    <label class="control-label col-xs-3" for="firstName">Name:</label>
-    <div class="col-xs-9">
-      <input type="text" class="form-control" id="firstName" placeholder="Enter your name">
+<h1 id="sgn">Sign Up</h1>
+<%= form_for @user, :html => {:class => "form-horizontal "} do |f| %>
+    <%= render 'shared/error_messages' %>
+    <div class="form-group">
+      <%= f.label :name, class: "col-md-4 control-label"%>
+      <div class="col-md-5">
+        <%= f.text_field :name, placeholder: "Enter your name", class: "form-control" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-xs-3" for="inputEmail">Email:</label>
-    <div class="col-xs-9">
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    <div class="form-group">
+      <%= f.label :email, class: "col-md-4 control-label" %>
+      <div class="col-md-5">
+        <%= f.text_field :email, placeholder: "Enter your email", class: "form-control" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-xs-3" for="inputPassword">Password:</label>
-    <div class="col-xs-9">
-      <input type="password" class="form-control" id="inputPassword" placeholder="Enter the password">
+    <div class="form-group">
+      <%= f.label :password, class: "col-md-4 control-label" %>
+      <div class="col-md-5">
+        <%= f.password_field :password, placeholder: "Enter the password", class: "form-control" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-xs-3" for="confirmPassword">Confirm:</label>
-    <div class="col-xs-9">
-      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+    <div class="form-group">
+      <%= f.label :password_confirmation, "Confirmation",  class: "col-md-4 control-label" %>
+      <div class="col-md-5">
+        <%= f.password_field :password_confirmation, placeholder: "Confirm your password ", class: "form-control" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-xs-3" for="phoneNumber">Tel:</label>
-    <div class="col-xs-9">
-      <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+
+    <div class="col-md-offset-4">
+      <%= f.submit "Create  account", class: "btn btn-large btn-primary" %>
     </div>
-  </div>
-  </div>
-  <br />
-  <div class="form-group">
-    <div class="col-xs-offset-3 col-xs-9">
-      <input type="submit" class="btn btn-primary" value="Submit">
-      <input type="reset" class="btn btn-default" value="Clear">
-    </div>
-  </div>
-</form>
+
+<% end %>
+
+
+
