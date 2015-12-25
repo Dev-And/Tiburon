@@ -37,13 +37,13 @@ footer ul li {
 }
 /* slider */
 
-carousel .item {
+/*.carousel .item {
   -webkit-transition: 0.7s ease-in-out opacity;
   -moz-transition: 0.7s ease-in-out opacity;
   -o-transition: 0.7s ease-in-out opacity;
   transition: 0.7s ease-in-out opacity;
   left: 0 !important;
-}
+}*/
 .carousel .next.left,
 .carousel .prev.right {
   opacity: 1;
@@ -78,4 +78,7 @@ carousel .item {
 
 .field_with_errors {
   @extend .has-error;
+}
+#Haveacc{
+  margin-top: 20px;
 }
