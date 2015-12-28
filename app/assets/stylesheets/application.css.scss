@@ -2,16 +2,19 @@
 @import "bootstrap";
 /*header */
 .navbar-default {
-  background-color: #D2DEC3;
-
+  background-color: ghostwhite;
+  margin-bottom:0px !important;
 }
 /* footer */
 
 footer {
   margin-top: 45px;
+  margin-left: 20px;
+  margin-right:20px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+
 }
 
 footer a {
@@ -35,30 +38,23 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
+/* padding left-right */
+.container{
+  padding-right: 0; /*15px in bootstrap.css*/
+  padding-left: 0;  /*idem*/
+  margin-right: auto;
+  margin-left: auto;
+}
 /* slider */
 
-/*.carousel .item {
-  -webkit-transition: 0.7s ease-in-out opacity;
-  -moz-transition: 0.7s ease-in-out opacity;
-  -o-transition: 0.7s ease-in-out opacity;
-  transition: 0.7s ease-in-out opacity;
-  left: 0 !important;
-}*/
-.carousel .next.left,
-.carousel .prev.right {
-  opacity: 1;
-  z-index: 1;
-}
-.carousel .active.left,
-.carousel .active.right {
-  opacity: 0;
-  z-index: 2;
-}
-.carousel .carousel-control {
-  z-index: 1000;
-  outline:none;
-}
 
+.carousel-inner,.carousel,.item,.container {
+  height:300px !important;
+  width:100%;
+}
+.no-padding{
+  padding:0;
+}
 /*forms*/
 
 #sgn{
@@ -81,4 +77,25 @@ footer ul li {
 }
 #Haveacc{
   margin-top: 20px;
+}
+#Partners{
+  background: whitesmoke;
+  width:100%;
+  height: 40%;
+}
+#images{
+  text-align: center;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.img{
+  margin-left:60px;
+  opacity: 0.75;
+}
+.firstimg{
+  opacity: 0.75;
+}
+.home-content{
+  width:100%;
+  height:70%;
 }
