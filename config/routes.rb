@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'password_resets/new'
+
   resources :sessions, only: [:new, :create, :destroy]
   resources  :users
   root 'pages#home'
   match '/services', to: 'pages#services', via: 'get'
+  match '/contact', to: 'pages#contact', via: 'get'
+  match '/about', to: 'pages#about', via: 'get'
   match '/signup',  to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
