@@ -9,12 +9,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
   def edit
-
+    @user = User.find(params[:id])
   end
   def update
 
     if @user.update_attributes(user_params)
-      flash[:success]
+      flash[:success] = "Profile updated"
       redirect_to @user
     else
       render 'edit'
@@ -22,9 +22,10 @@ class UsersController < ApplicationController
   end
   def create
     @user = User.new(user_params)
-    if @user.save
-      flash[:success] = "Welcome to Tiburon LTD!"
-      redirect_to @user
+    if @user.save #After mailing, make a line 'signin' after user.save
+      @user.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       render 'new'
     end
@@ -43,6 +44,6 @@ class UsersController < ApplicationController
   end
   def correct_user
     @user = User.find(params[:id])
-    redirect_to root_url unless current_user? (@user)
+    redirect_to(root_url) unless current_user?(@user)
   end
 end

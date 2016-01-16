@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'password_resets/new'
 
   resources :sessions, only: [:new, :create, :destroy]
   resources  :users
+  #Fixing error with wrong route at mailer html
+  get '/account_activation' => 'account_activations#edit', as:  'edit_account_activation'
+  #
+  resources :password_resets,     only: [:new, :create, :edit, :update]
   root 'pages#home'
   match '/services', to: 'pages#services', via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
