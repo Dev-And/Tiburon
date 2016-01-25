@@ -10,21 +10,24 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="http://hq-wallpapers.ru/wallpapers/8/hq-wallpapers_ru_city_36796_1920x1080.jpg" alt="...">
+        <%=image_tag("port1.jpg",
+                     :class=>" img-responsive img-center ") %>
         <div class="carousel-caption">
-          <h3>Odessa transport company</h3>
+          <h3></h3>
         </div>
       </div>
       <div class="item">
-        <img src="http://omport.ru/images/wall.jpg" alt="..."  >
+        <%=image_tag("port2.jpg",
+                     :class=>" img-responsive img-center ") %>
         <div class="carousel-caption">
-          <h3>Caption Text</h3>
+          <h3></h3>
         </div>
       </div>
       <div class="item">
-        <img src="http://img1.goodfon.ru/original/1400x1050/3/25/maersk-line-maersk-essex-27.jpg" alt="...">
+        <%=image_tag("port3.jpg",
+                     :class=>" img-responsive img-center ") %>
         <div class="carousel-caption">
-          <h3>Caption Text</h3>
+          <h3></h3>
         </div>
       </div>
     </div>
@@ -37,32 +40,87 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div> <!-- Carousel -->
-<div id="Partners">
+<div id="Partners" >
   <div class="row">
-    <div id="images">
-      <%= link_to "https://my.maerskline.com/" do %>
-          <%=image_tag("120px-A.P._Moller_-_Maersk_Group.svg.png",:size => "90x70",
-                       :class=>"firstimg") %>
-      <% end %>
-
-      <%= link_to "https://www.msc.com/" do %>
-          <%=image_tag("MSC Cruises Logo.png",:size => "80x80",
-                       :class=>"img") %>
-      <% end %>
-
-      <%= link_to "http://www.zim.com/pages/default.aspx" do %>
-          <%=image_tag("logo_zim_social.png",:size => "70x70",
-                       :class=>"img") %>
-      <% end %>
-
-      <%= link_to "https://www.cma-cgm.com/" do %>
-          <%=image_tag("CmaCgm_colors_1.png",:size => "80x80",
-                       :class=>"img") %>
-      <% end %>
+    <div id="images" >
+      <div class="col-sm-2 col-md-2 col-lg-2">
+        <%= link_to "https://my.maerskline.com/" do %>
+            <%=image_tag("120px-A.P._Moller_-_Maersk_Group.svg.png",:size => "90x70",
+                         :class=>"firstimg") %>
+        <% end %>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2">
+          <%= link_to "https://www.msc.com/" do %>
+              <%=image_tag("MSC Cruises Logo.png",:size => "80x80",
+                           :class=>"image ") %>
+          <% end %>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2">
+          <%= link_to "http://www.zim.com/pages/default.aspx" do %>
+              <%=image_tag("logo_zim_social.png",:size => "70x70",
+                           :class=>"image ") %>
+          <% end %>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2">
+          <%= link_to "https://www.cma-cgm.com/" do %>
+              <%=image_tag("CmaCgm_colors_1.png",:size => "80x80",
+                           :class=>"image ") %>
+          <% end %>
+          </div>
+      <div class="col-sm-2 col-md-2 col-lg-2">
+        <%= link_to "http://www.bkport.com/" do %>
+            <%=image_tag("logo.png",:size => "80x80",
+                         :class=>"image ") %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div><!-- Partners -->
   <div class="home-content">
+    <div class="title"></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 id="What"> Tiburon LTD— морские транспортно-экспедиторские услуги.</h2>
+        <hr>
+        <div class="col-sm-5 col-sm-offset-3 text-center">
+        <p id="blank">Основным направлением деятельности  Tiburon LTD являются международные контейнерные FCL / LCL перевозки на условиях «от двери до двери» в режимах импорт / транзит, внутрипортовое экспедирование контейнеров и таможенное оформление грузов в ОМТП и ИМТП. </p>
+        </div>
+        <hr >
+        <div class="col-sm-8 text-center">
+      </div>
+      </div>
+    </div>
+    <div class="circles">
+    <div class="row">
+      <div class="   col-sm-4 col-lg-4">
+        <%=image_tag("115.jpg",
+                     :class=>"img-circle img-responsive img-center ") %>
 
+        <h2>Наши особенности:</h2>
+        <ul>
+          <li>полный комплекс услуг по организации перевозок автомобилей из Китая, США и Канады;</li>
+          <li>полный комплекс услуг по организации перевозок личных вещей, дипломатических грузов, гуманитарной помощи;</li>
+          <li>наиболее быстрый и и выгодный LCL сервиз из США;</li>
+          <li>экспорт ТНП в США.</li>
+        </ul>
+      </div>
+      <div class="  col-sm-4 col-lg-4">
+        <%=image_tag("writer.jpg",
+                     :class=>"img-circle img-responsive img-center ") %>
+        <h2>Наши преимущества:</h2>
+        <ul>
+          <li>высокое качество услуг;</li>
+          <li>быстрое оформление грузов в порту;</li>
+          <li>доступная стоимость услуг наивысшего качества.</li>
+        </ul>
+      </div>
+      <div class="  col-sm-4 col-lg-4">
+        <%=image_tag("broker.jpg",
+                     :class=>"img-circle img-responsive img-center ") %>
+        <h2>Наши услуги наивысшего качества!</h2>
+        <p>Многолетний опыт в области морских и автомобильных перевозок, экспедирования грузов, высокий профессионализм сотрудников, надежные деловые контакты с ведущими судоходными линиями, индивидуальный подход к каждому Клиенту позволяет нашей компании предоставлять услуги наивысшего качества.</p>
+      </div>
+    </div>
   </div>
-
+  </div>
+</div>

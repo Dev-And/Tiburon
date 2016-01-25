@@ -53,3 +53,4 @@ group :production do
 end
 gem 'gmaps4rails'
 gem 'figaro'
+gem 'ihover-rails'

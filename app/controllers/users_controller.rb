@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save #After mailing, make a line 'signin' after user.save
       @user.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
+      flash[:info] = "Пожалуйста проверьте ваш email чтобы активировать аккаунт."
       redirect_to root_url
     else
       render 'new'
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   def sign_in_user
     unless signed_in?
       store_location
-      flash[:warning] = "Please sign in."
+      flash[:warning] = "Пожалуйста авторизируйтесь."
       redirect_to signin_url
     end
   end

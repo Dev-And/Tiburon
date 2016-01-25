@@ -9,10 +9,10 @@ def create
   if @user
     @user.create_reset_digest
     @user.send_password_reset_email
-    flash[:info] = "Email sent with password reset instructions"
+    flash[:info] = "На ваш email было отправлено письмо для сброса пароля"
     redirect_to root_url
   else
-    flash.now[:danger] = "Email address not found"
+    flash.now[:danger] = "Email не найден"
     render 'new'
   end
 end
@@ -20,11 +20,11 @@ end
   end
   def update
     if params[:user][:password].empty?
-      @user.errors.add(:password, "can't be empty")
+      @user.errors.add(:password, "не может быть пустым")
       render 'edit'
     elsif @user.update_attributes(user_params)
       sign_in @user
-      flash[:success] = "Password has been reset."
+      flash[:success] = "Пароль успешно сброшен."
       redirect_to @user
     else
       render 'edit'
@@ -45,7 +45,7 @@ private
   end
   def check_expiration
     if @user.password_reset_expired?
-      flash[:danger] = "Password reset has expired."
+      flash[:danger] = "Время ссылки по сбросу пароля истекло."
       redirect_to new_password_reset_url
     end
   end

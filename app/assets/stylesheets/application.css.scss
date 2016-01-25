@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "ihover";
 /*fix white line*/
 html,body
 {
@@ -27,24 +28,28 @@ html,body
 
 footer {
   margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+  background-color: white;
 
 }
 
 footer a {
   color: #555;
+  margin-right:5px;
 }
 
 footer a:hover {
   color: #222;
+
 }
 
 footer small {
   float: left;
+  margin-left:5px;
+  color: #222;
 }
 
 footer ul {
@@ -118,22 +123,24 @@ input {
 }
 #images{
   text-align: center;
-  margin-left: 40px;
+  margin-left: 240px;
   padding-top: 20px;
 
 }
-.img{
-  margin-left:60px;
+.image{
+
   opacity: 0.75;
   text-decoration: none;
 }
 .firstimg{
   opacity: 0.75;
-  margin-right:10px;
+
 }
 .home-content{
   width:100%;
   height:70%;
+
+  margin-bottom:600px;
 }
 
 /* Gravatar settings*/
@@ -155,6 +162,7 @@ input {
   height:150px;
   width:150px;
   margin-left:850px;
+  margin-bottom: 300px;
 }
 .checkbox {
   margin-top: -10px;
@@ -168,4 +176,29 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+.title{
+  margin-bottom: 20px;
+}
+.circles{
+  margin-top:50px;
+  margin-left:20px;
+  margin-bottom:150px;
+}
+
+hr {
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#What{
+  font-family: "Times New Roman";
+  opacity: 0.8;
+}
+#blank{
+  opacity:0.8;
+  font-family: Arial;
+  font-size: 15pt;
 }
