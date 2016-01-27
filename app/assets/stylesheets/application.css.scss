@@ -13,7 +13,7 @@ html,body
 /*header */
 .navbar-default {
   height: 100px;
-  background-color: ghostwhite;
+  background-color: #f8f8ff;
   margin-bottom:0px !important;
 }
 .collapse, .navbar-collapse{
@@ -23,6 +23,9 @@ html,body
 }
 .brand{
   margin-left:40px;
+}
+.navbar-collapse{
+  background-color: #f8f8ff;
 }
 /* footer */
 
@@ -75,7 +78,13 @@ footer ul li {
   height:300px !important;
   width:100%;
 }
-
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 /*forms*/
 
@@ -154,9 +163,11 @@ input {
 }
 
 #map{
-  margin-left:140px;
+  margin-left:20px;
+
   margin-top: 40px;
-  border: 10px solid #97BDB1;
+  height:100%;
+
 }
 #address{
   height:150px;
@@ -215,37 +226,4 @@ hr {
 }
 
 
-@media (max-width: 767px) {
 
-  .slideimg {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* tablets */
-@media (max-width: 991px) and (min-width: 768px) {
-
-  .slideimg {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* laptops */
-@media (max-width: 1023px) and (min-width: 992px) {
-
-  .slideimg {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* desktops */
-@media (min-width: 1024px) {
-
-  .slideimg {
-    width: 100%;
-    height: 100%;
-  }
-}
