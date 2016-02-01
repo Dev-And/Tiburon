@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/account_activation' => 'account_activations#edit', as:  'edit_account_activation'
   #
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  get 'contact', to: 'messages#new', as: 'contact'
+  post 'contact', to: 'messages#create'
   root 'pages#home'
   match '/services', to: 'pages#services', via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
