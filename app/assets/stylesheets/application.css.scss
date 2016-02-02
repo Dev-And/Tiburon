@@ -167,15 +167,15 @@ input {
 #map{
   margin-left:50px;
 
-  margin-top: 10px;
-  height:40%;
-  margin-bottom:30px;
+  margin-top: 100px;
+  height:400px;
+  margin-bottom:100px;
 
 }
 #address{
+margin-left: 40px;
+  margin-top:30px;
 
-  margin-left:50px;
-  margin-bottom: 10px;
 }
 .checkbox {
   margin-top: -10px;
@@ -228,4 +228,6 @@ hr {
 }
 
 
-
+#formcont{
+  margin-top:50px;
+}

@@ -7,9 +7,9 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       UserMailer.new_message(@message).deliver
-      redirect_to contact_path, notice: "Ваше сообщение успешно отправлено."
+      redirect_to contact_path, success: "Ваше сообщение успешно отправлено."
     else
-      flash[:danger] = "Ошибка при отправке сообщения."
+      flash.now[:danger] = "Ошибка при отправке сообщения."
       render :new
     end
   end
