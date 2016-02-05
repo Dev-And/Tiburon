@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources  :users
   #Fixing error with wrong route at mailer html
-  get '/account_activation' => 'account_activations#edit', as:  'edit_account_activation'
+  resources :account_activations, only: [:edit]
   #
   resources :password_resets,     only: [:new, :create, :edit, :update]
   get 'contact', to: 'messages#new', as: 'contact'
