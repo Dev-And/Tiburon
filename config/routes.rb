@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
   root 'pages#home'
+  match '/information', to: 'pages#information', via: 'get'
   match '/services', to: 'pages#services', via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
   match '/about', to: 'pages#about', via: 'get'

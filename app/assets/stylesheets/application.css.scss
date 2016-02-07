@@ -12,17 +12,20 @@ html,body
 }
 /*header */
 .navbar-default {
-  height: 100px;
+  height: 150px;
   background-color: #f8f8ff;
   margin-bottom:0px !important;
 }
 .collapse, .navbar-collapse{
-  margin-top:20px;
+  margin-top:40px;
   font-size: 12pt;
   margin-right:20px;
+
 }
 .brand{
-  margin-left:40px;
+  margin-top:10px;
+  margin-left:10px;
+  margin-bottom: 80px;
 }
 .navbar-collapse{
   background-color: #f8f8ff;
@@ -230,4 +233,10 @@ hr {
 
 #formcont{
   margin-top:50px;
+}
+.aboutcomp{
+  margin-top: 40px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:50px;
 }

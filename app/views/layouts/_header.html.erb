@@ -10,7 +10,7 @@
       </button>
       <div class="brand">
       <%= link_to root_path, :class => "navbar-brand" do %>
-      <%=image_tag("LOGO5.png",:size => "148x66") %>
+      <%=image_tag("logo-reform1.png") %>
       <%end%>
       </div>
     </div>
@@ -20,6 +20,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Главная",    root_path %></li>
         <li><%= link_to "Услуги",    services_path %></li>
+        <li><%= link_to "Полезная информация",    information_path %></li>
         <li><%= link_to "Контакты",    contact_path,  'data-no-turbolink' => true %></li>
         <li><%= link_to "О компании",    about_path %></li>
         <% if signed_in? %>
