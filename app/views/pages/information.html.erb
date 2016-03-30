@@ -1,0 +1,93 @@
+<% provide(:title, 'Information') %>
+<div id="carousel-example-generic" data-interval="4000" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%=image_tag("port1.jpg",
+                   :class=>" img-responsive") %>
+      <div class="carousel-caption">
+        <h3></h3>
+      </div>
+    </div>
+    <div class="item">
+      <%=image_tag("port2.jpg",
+                   :class=>"img-responsive ") %>
+      <div class="carousel-caption">
+        <h3></h3>
+      </div>
+    </div>
+    <div class="item">
+      <%=image_tag("port3.jpg",
+                   :class=>" img-responsive ") %>
+      <div class="carousel-caption">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+<div class="marg">
+  <div class="title" style="margin-bottom:30px"></div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+
+      <hr>
+      <div class="col-sm-6 col-sm-offset-3 text-center">
+        <h2 class="What" style="margin-bottom:30px"> Полезная информация</h2>
+      </div>
+      <hr >
+      <div class="col-sm-8 text-center">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%=image_tag("track.jpg",
+                     :class=>" img-responsive img-center ") %>
+        <div class="caption">
+          <h3>Условия перевозки грузов</h3>
+          <p> Автомобильные перевозки применяются для перевозки  особо ценных,скоропортящихся, требующих быстрой доставки, неудобных для перегрузки другими видами транспорта грузов.</p>
+          <p><a href="#" class="btn btn-primary" role="button">Подробнее</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%=image_tag("cont.jpg",
+                     :class=>" img-responsive img-center ") %>
+        <div class="caption">
+          <h3>Обзор типов контейнеров</h3>
+          <p>В широком спектре различных стандартных и специальных типов контейнеров мы можем предложить наиболее подходящий по своим параметрам для каждого отдельного вида товара.</p>
+          <p><a href="information/containers" class="btn btn-primary" role="button">Подробнее</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%=image_tag("term.jpg",
+                     :class=>" img-responsive img-center ") %>
+        <div class="caption">
+          <h3>Инкотермс 2010</h3>
+          <p>Международные правила в формате словаря, обеспечивающие однозначные толкования наиболее широко используемых торговых терминов в области внешней торговли частного характера.</p>
+          <p><a href="#" class="btn btn-primary" role="button">Подробнее</a> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -52,5 +52,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 gem 'gmaps4rails'
+gem 'geocoder'
 gem 'figaro'
 gem 'ihover-rails'

@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160115173632) do
+ActiveRecord::Schema.define(version: 20160307170942) do
+
+  create_table "locates", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ua_tariffs", force: :cascade do |t|
+    t.integer  "load_up_to_2t",  limit: 4
+    t.integer  "load_up_to_5t",  limit: 4
+    t.integer  "load_up_to_10t", limit: 4
+    t.integer  "load_up_to_20t", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",              limit: 255
@@ -25,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160115173632) do
     t.datetime "activated_at"
     t.string   "reset_digest",      limit: 255
     t.datetime "reset_sent_at"
+    t.boolean  "admin",                         default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

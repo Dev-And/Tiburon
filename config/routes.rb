@@ -2,15 +2,20 @@ Rails.application.routes.draw do
 
 
   resources :sessions, only: [:new, :create, :destroy]
-  resources  :users
+  resources :users
+
+
   #Fixing error with wrong route at mailer html
   resources :account_activations, only: [:edit]
   #
   resources :password_resets,     only: [:new, :create, :edit, :update]
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
+  match '/direction', to: 'pages#direction', via: 'get'
   root 'pages#home'
+
   match '/information', to: 'pages#information', via: 'get'
+  match 'information/containers', to: 'pages#containers', via: 'get'
   match '/services', to: 'pages#services', via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
   match '/about', to: 'pages#about', via: 'get'

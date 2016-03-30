@@ -15,17 +15,21 @@ html,body
   height: 150px;
   background-color: #f8f8ff;
   margin-bottom:0px !important;
+
 }
 .collapse, .navbar-collapse{
   margin-top:40px;
   font-size: 12pt;
   margin-right:20px;
-
+  z-index:1000;
+  position: relative;
 }
 .brand{
   margin-top:10px;
   margin-left:10px;
   margin-bottom: 80px;
+  z-index:1001;
+  position: relative;
 }
 .navbar-collapse{
   background-color: #f8f8ff;
@@ -80,7 +84,10 @@ footer ul li {
 .carousel-inner,.carousel,.item,.container {
   height:300px !important;
   width:100%;
+  z-index: 1;
+  position: relative;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -139,7 +146,6 @@ input {
   text-align: center;
   margin-left: 240px;
   padding-top: 20px;
-
 }
 .image{
 
@@ -151,9 +157,9 @@ input {
 
 }
 .home-content{
-  width:100%;
   height:70%;
-
+  margin-left:50px;
+  margin-right:50px;
   margin-bottom:600px;
 }
 
@@ -161,7 +167,6 @@ input {
 #grav_edit{
   margin-bottom: 70px;
   margin-right: 300px;
-
 }
 .show{
   margin-left: 150px;
@@ -169,16 +174,19 @@ input {
 
 #map{
   margin-left:50px;
+   height:400px;
+  margin-bottom:10px;
+  margin-top: 50px;
+}
+#map1{
+  margin-left:50px;
 
-  margin-top: 100px;
   height:400px;
   margin-bottom:100px;
-
 }
 #address{
-margin-left: 40px;
-  margin-top:30px;
 
+  margin-top:30px;
 }
 .checkbox {
   margin-top: -10px;
@@ -233,10 +241,21 @@ hr {
 
 #formcont{
   margin-top:50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+
 }
-.aboutcomp{
+.marg{
   margin-top: 40px;
-  margin-left:10px;
-  margin-right:10px;
+  margin-left:50px;
+  margin-right:50px;
   margin-bottom:50px;
+}
+.only-bottom-margin {
+  margin-top: 0px;
+}
+
+.activity-mini {
+  padding-right: 15px;
+  float: left;
 }

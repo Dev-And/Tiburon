@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def home
   end
   def services
@@ -11,6 +12,9 @@ class PagesController < ApplicationController
 
   end
   def information
+
+  end
+  def containers
 
   end
 end
