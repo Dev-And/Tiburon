@@ -1,0 +1,24 @@
+<table id="example" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+  <thead>
+  <tr>
+
+    <th>Страна</th>
+    <th>До 2 тонн</th>
+    <th>До 5 тонн</th>
+    <th>До 10 тонн</th>
+    <th>До 20 тонн</th>
+    <th>Редактировать</th>
+  </tr>
+
+  <% @taxes.each do |load| %>
+          <tr>
+            <td><%= load.country%> </td>
+            <td><%= load.load_up_to_2t%> </td>
+            <td><%= load.load_up_to_5t%> </td>
+            <td><%= load.load_up_to_10t%> </td>
+            <td><%= load.load_up_to_20t%> </td>
+            <td><%= link_to 'Редактировать', edit_admin_tax_path(load)%>  </td>
+          </tr>
+  <% end %>
+  </thead>
+</table>

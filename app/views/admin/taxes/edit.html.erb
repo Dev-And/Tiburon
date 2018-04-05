@@ -1,0 +1,19 @@
+<h2>Edit taxes</h2>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+<%= form_for :tax, url: admin_tax_path(@tax), method: :patch, :html => {:class => "form-horizontal "} do |f| %>
+    <%= f.label :country %>
+    <%= f.text_field :country,  class: "form-control", :disabled=>true %>
+    <%= f.label :load_up_to_2t %>
+    <%= f.text_field :load_up_to_2t,  class: "form-control" %>
+    <%= f.label :load_up_to_5t %>
+    <%= f.text_field :load_up_to_5t,  class: "form-control" %>
+    <%= f.label :load_up_to_10t %>
+    <%= f.text_field :load_up_to_10t,  class: "form-control" %>
+    <%= f.label :load_up_to_20t %>
+    <%= f.text_field :load_up_to_20t,  class: "form-control" %>
+    <%= f.submit "Сохранить изменения", class: "btn btn-large btn-primary" %>
+        </div>
+  <%end%>
+
+</div>

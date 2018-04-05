@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: tiburon-ltd
+  api_key: '583693655896989'
+  api_secret: Ul_04JnPfzb4pWjpvwVxJfmD-GM
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: tiburon-ltd
+  api_key: '583693655896989'
+  api_secret: Ul_04JnPfzb4pWjpvwVxJfmD-GM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: tiburon-ltd
+  api_key: '583693655896989'
+  api_secret: Ul_04JnPfzb4pWjpvwVxJfmD-GM
+  enhance_image_tag: true
+  static_image_support: false
